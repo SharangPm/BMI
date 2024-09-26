@@ -1,0 +1,122 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: white;
+    
+  }
+
+  /* BMI Calculator Box */
+  .bmi-calculator {
+    width: 400px;
+    position: fixed;
+    right: -500px;
+    top: 140px;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .bmi-calculator h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  .form-label {
+    font-weight: bold;
+    color: #e0e0e0;
+  }
+
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: none;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .btn-custom {
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: #ff3b2f;
+  }
+
+  .result-box {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  /* Button hover effects */
+  .btn-custom {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .highlight{
+    color: gold;
+    font-weight: bold;
+  }
+
+  .meter-container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin-left: 220px;
+    margin-top: 170px;
+    background-image: url('https://www.pnbmetlife.com/content/dam/pnb-metlife/images/icons/bmi-calculator/meter.png'); /* Meter background image */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .pointer {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    top: 45%;
+    left: 41%; /* Adjust this based on the meter image */
+    /* transform-origin: 50% 100%; Rotate from the bottom center */
+    transition: transform 0.5s ease-out;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/25/25435.png'); /* Pointer/Needle image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+  }
+
+  .result-box {
+    text-align: center;
+    margin-top: 20px;
+  }
