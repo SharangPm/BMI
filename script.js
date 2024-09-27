@@ -1,4 +1,4 @@
-gsap.to('#bmi-calculator', { duration: 1.5, right: '20px', opacity: 1, ease: 'power2.out' });
+gsap.to('#bmi-calculator', { duration: 1.5, right: '60px', opacity: 1, ease: 'power2.out' });
 function calculateBMI() {
     const weight = parseFloat(document.getElementById('weight').value);
     const height = parseFloat(document.getElementById('height').value) / 100;
