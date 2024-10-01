@@ -5,6 +5,7 @@ function calculateBMI() {
 
     if (weight > 0 && height > 0) {
       const bmi = (weight / (height * height)).toFixed(2);
+      localStorage.setItem('bmi',bmi);
       let resultText = '';
 
       // Determine BMI category and result text
@@ -48,6 +49,13 @@ function calculateBMI() {
 
       // Apply the calculated rotation to the pointer
       pointer.style.transform = `rotate(${rotation}deg)`;
+
+    
+
+      setTimeout(function() {
+        // Replace 'nextpage.html' with your actual destination URL
+        window.location.href = 'home.html';
+      }, 2200);
     } else {
       alert('Please enter valid values for weight and height');
     }
